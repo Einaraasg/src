@@ -20,9 +20,9 @@ public static void main(String[] args) {
         else if (inntekt <= 580651)
             skatt = (230950 -164101) * 0.0093 + (inntekt - 230951) * 0.0241;
         else if (inntekt <= 934051)
-            skatt = (230950 -164101) * 0.0093 + (580651 - 230951) * 0.0241+(inntekt-580651)*0.1152;
+            skatt = (230950 -164101) * 0.0093 + (580651 - 230951) * 0.0241+ (inntekt-580651)*0.1152;
         else if (inntekt >= 934051)
-            skatt = (230950 -164101) * 0.0093 + (580651 - 230951) * 0.0241+(934051-580651)*0.1152 + (inntekt - 934051)*14.52;
+            skatt = (230950 -164101) * 0.0093 + (580651 - 230951) * 0.0241+ (934051-580651)*0.1152 + (inntekt - 934051)*0.1452;
 
         if (inntekt <=  164100)
             System.out.println("Du betaler ikke toppskatt");
@@ -33,6 +33,6 @@ public static void main(String[] args) {
         else if (inntekt <= 934051)
             System.out.println("Du betaler trinn 3 skatt, 11.52% som blir " + skatt );
         else if (inntekt >= 934051)
-            System.out.println("Du betaler trinn 3 skatt, 11.52% som blir " + skatt );
+            System.out.println("Du betaler trinn 4 skatt, 14	14.52% som blir " + skatt );
     }
 }
